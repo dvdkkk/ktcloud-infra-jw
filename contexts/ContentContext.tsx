@@ -10,7 +10,7 @@ const defaultContent: SiteContent = {
     highlight: "(인프라)전문가과정",
     description: "\n으로 거듭나세요",
     stats: [
-      { label: '교육기간', value: '26년 05월 12일 ~ 12월 08일' },
+      { label: '교육기간', value: '26.08.19~27.03.16' },
       { label: '교육시간', value: '평일 09:00~18:00 (1일 8시간)' },
       { label: '교육방법', value: '100% 온라인 실시간' },
       { label: '자비부담금', value: '0 ~ 60만원' },
