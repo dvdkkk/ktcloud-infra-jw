@@ -1,4 +1,3 @@
-
 import React, { useRef, useState, useEffect } from 'react';
 import { UserCheck, Briefcase, Award, GraduationCap } from 'lucide-react';
 
@@ -58,59 +57,37 @@ export const InstructorSection: React.FC = () => {
         </Reveal>
 
         <div className="max-w-5xl mx-auto bg-zinc-900/50 border border-zinc-800 rounded-3xl p-8 md:p-12 shadow-2xl">
-          <div className="flex flex-col md:flex-row gap-8 mb-12">
-            <div className="md:w-1/3 text-center">
-              <img src="https://postfiles.pstatic.net/MjAyNjAzMjNfMjAx/MDAxNzc0MjQ3OTQ0NjY2.J8uK8FsAY-49US296FKwW_MUU-JWG8wzMp9ITtoNokIg.4lQmWTAgP0m-SyX60wJ-Thd06ZH4WJqSxeY0tClV_aEg.JPEG/kbt_teacher.jpg?type=w966" alt="강사 사진" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" referrerPolicy="no-referrer" />
-              <h3 className="text-2xl font-black text-white">김범택</h3>
-              <p className="text-red-500 font-bold">강사</p>
-              <p className="text-zinc-400 text-sm mt-2">클라우드 구축 및 컨설팅 전문가</p>
-            </div>
-            <div className="md:w-2/3">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-                {['클라우드 엔지니어링', '보안', '가상화', '인공지능'].map(skill => (
-                  <span key={skill} className="bg-zinc-800 text-zinc-300 px-3 py-1 rounded-full text-xs text-center">{skill}</span>
-                ))}
-              </div>
-              <div className="bg-zinc-950 p-6 rounded-2xl border border-zinc-800">
-                <p className="text-zinc-300 text-sm mb-2">총 수강 인원: 26명 | 평균만족도: 4.9점</p>
-                <p className="text-zinc-300 text-sm">총 평가인원: 23명 | 평가참여율: 88.5%</p>
-              </div>
-            </div>
+          <div className="text-center mb-12">
+            <img src="https://postfiles.pstatic.net/MjAyNjA2MTFfMTA3/MDAxNzgxMTQwNTYzMzMx.BwSgI69YlXAvYu0_KcsdyOUyklVqAinWGmgS7WIwM_Qg.84tfy1RlHNawuu-7DqfMoJdd2gekw3K7mwdM9275qsAg.PNG/AIDrawing_260611_ebf65b67-bc54-494b-8f8f-15f16101898c_0_MiriCanvas.png?type=w966" alt="강사 사진" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" referrerPolicy="no-referrer" />
+            <h3 className="text-2xl font-black text-white">{/* 서영진 */}서영진</h3>
+            <p className="text-red-500 font-bold">강사</p>
+            <p className="text-zinc-400 text-sm mt-2">세종사이버대학 SW공학 겸임교수</p>
+          </div>
+          
+          <div className="flex flex-wrap justify-center gap-3 mb-16">
+            {['클라우드 엔지니어링', '보안', '가상화', '인공지능'].map(skill => (
+              <span key={skill} className="bg-zinc-800 text-zinc-300 px-4 py-1.5 rounded-full text-sm">{skill}</span>
+            ))}
           </div>
 
-          <div className="overflow-x-auto mb-12 relative">
-            <div className="md:hidden text-center text-zinc-500 text-xs mb-2 animate-pulse">← 좌우로 스크롤하여 확인하세요 →</div>
-            <table className="w-full text-center text-zinc-300 text-sm border-collapse min-w-[600px]">
-              <thead>
-                <tr className="border-b border-zinc-800">
-                  <th className="p-2">전반적 만족도</th><th className="p-2">훈련내용</th><th className="p-2">훈련교사</th><th className="p-2">훈련방법</th><th className="p-2">시설장비</th><th className="p-2">행정서비스</th><th className="p-2">취업지원</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="p-2">4.9</td><td className="p-2">4.9</td><td className="p-2">5</td><td className="p-2">4.8</td><td className="p-2">4.6</td><td className="p-2">4.9</td><td className="p-2">4.7</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 border-t border-zinc-800 pt-12">
             <div>
               <h4 className="text-lg font-bold text-white mb-4">주요경력</h4>
               <div className="space-y-4">
                 <div>
                   <p className="text-red-500 font-bold text-sm">현재</p>
                   <ul className="text-zinc-400 text-sm space-y-1">
-                    <li>(現) kt Cloud 클라우드 인프라 전임강의</li>
-                    <li>(現) 클라우드분야 컨설팅 및 구축강의 프리랜서</li>
+                    <li>(학력) 숭실대 컴퓨터과학 박사</li>
+                    <li>(現) 세종사이버대학 SW공학 겸임교수</li>
                   </ul>
                 </div>
                 <div>
                   <p className="text-zinc-500 font-bold text-sm">이전</p>
                   <ul className="text-zinc-400 text-sm space-y-1">
-                    <li>(前) 하니웰 코리아 네트워크 보안 구축 및 운영</li>
-                    <li>(前) 시스코코리아 무선라우터 개발 및 최적화</li>
-                    <li>(前) 글로벌널리지 네트워크㈜ 네트워크, 서버, 가상화</li>
+                    <li>(前) ㈜젠트솔루션 대표이사</li>
+                    <li>(前) SamTree 기술이사</li>
+                    <li>(前) ㈜커널링크 기술팀장</li>
+                    <li>(前) 한국리눅스㈜ 팀장</li>
                   </ul>
                 </div>
               </div>
@@ -120,15 +97,15 @@ export const InstructorSection: React.FC = () => {
               <div className="space-y-4 text-zinc-400 text-sm">
                 <div>
                   <p className="font-bold text-zinc-300">기업 강의</p>
-                  <p>[KaKao] Kakao 클라우드 엔지니어링 과정, [신세계아이엔씨] 클라우드 강의, [CJ올리브네트웍스] 클라우드 강의, aws, 컨테이너, 쿠버네티스 강의</p>
+                  <p>현대모비스, 현대오토론, 현대자동차, LIG넥스원, LGU+, LG디스플레이, 한국전자정보통신산업진흥회, 태하메타트로닉스, 하나금융그룹, 미라콤, 삼성전자, 한화시스템, 한화탈레스 ,HP, 국세청, 신세계아이앤씨, LG전자 등</p>
                 </div>
                 <div>
                   <p className="font-bold text-zinc-300">대학 강의</p>
-                  <p>강원대, 계명대, 전남대, 경기대, 아주대, 성균관대 등 클라우드 강의</p>
+                  <p>세종사이버대, 동양미래대, 서울디지털대, 숭실대, 목포대, 충북대, 계명대, 대구대, 전주대, 전북대, 원광대, 조선대, 인하대 등, 리눅스 · 임베디드 · 클라우드 강의</p>
                 </div>
                 <div>
                   <p className="font-bold text-zinc-300">강의 경력</p>
-                  <p>[IITP 혁신성장 인재 양성사업] 클라우드 강의, [한국폴리텍대학] 하이테크 프로젝트 진행, K-Software Empowerment BootCamp(KSEB), AWS 클라우드엔지니어링, SK텔레콤, 신한 등 기업 재직자 강의 이외 다수 클라우드, 보안 관련 강의</p>
+                  <p>현대자동차, 삼성SNS, ㈜새롬기술, 한국수력원자력㈜ 등 다양한 프로젝트 실무 개발</p>
                 </div>
               </div>
             </div>
@@ -139,3 +116,4 @@ export const InstructorSection: React.FC = () => {
     </section>
   );
 };
+
