@@ -58,10 +58,10 @@ export const InstructorSection: React.FC = () => {
 
         <div className="max-w-5xl mx-auto bg-zinc-900/50 border border-zinc-800 rounded-3xl p-8 md:p-12 shadow-2xl">
           <div className="text-center mb-12">
-            <img src="https://postfiles.pstatic.net/MjAyNjA2MTFfMTA3/MDAxNzgxMTQwNTYzMzMx.BwSgI69YlXAvYu0_KcsdyOUyklVqAinWGmgS7WIwM_Qg.84tfy1RlHNawuu-7DqfMoJdd2gekw3K7mwdM9275qsAg.PNG/AIDrawing_260611_ebf65b67-bc54-494b-8f8f-15f16101898c_0_MiriCanvas.png?type=w966" alt="강사 사진" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" referrerPolicy="no-referrer" />
-            <h3 className="text-2xl font-black text-white">{/* 서영진 */}서영진</h3>
+            <img src="https://postfiles.pstatic.net/MjAyNjA3MDlfMTc2/MDAxNzgzNTczODA2MzA1.vPge9Ch69KsBDo-4q80BMfk2tmG3jg147V59bgxOFZ8g.N2hd-f-g69uEWhS0jvYV5p26fkKsUlPfuP1wOXX_8osg.PNG/hhs_teacher.png?type=w966" alt="강사 사진" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" referrerPolicy="no-referrer" />
+            <h3 className="text-2xl font-black text-white">{/* 홍혜선 */}홍혜선</h3>
             <p className="text-red-500 font-bold">강사</p>
-            <p className="text-zinc-400 text-sm mt-2">세종사이버대학 SW공학 겸임교수</p>
+            <p className="text-zinc-400 text-sm mt-2">숭실대 정보보안 석사</p>
           </div>
           
           <div className="flex flex-wrap justify-center gap-3 mb-16">
@@ -77,17 +77,17 @@ export const InstructorSection: React.FC = () => {
                 <div>
                   <p className="text-red-500 font-bold text-sm">현재</p>
                   <ul className="text-zinc-400 text-sm space-y-1">
-                    <li>(학력) 숭실대 컴퓨터과학 박사</li>
-                    <li>(現) 세종사이버대학 SW공학 겸임교수</li>
+                    <li>(학력) 숭실대 정보보안 석사</li>
+                    <li>(現) AWS, GCP, LF, RedHat 공인강사</li>
                   </ul>
                 </div>
                 <div>
                   <p className="text-zinc-500 font-bold text-sm">이전</p>
                   <ul className="text-zinc-400 text-sm space-y-1">
-                    <li>(前) ㈜젠트솔루션 대표이사</li>
-                    <li>(前) SamTree 기술이사</li>
-                    <li>(前) ㈜커널링크 기술팀장</li>
-                    <li>(前) 한국리눅스㈜ 팀장</li>
+                    <li>(前) HP코리아 클라우드 PSC팀 컨설턴트  </li>
+                    <li>(前) 한국 IBM/GKNAIX 전임강사</li>
+                    <li>(前) HP코리아 /오라클 전임강사</li>
+                    
                   </ul>
                 </div>
               </div>
@@ -97,15 +97,15 @@ export const InstructorSection: React.FC = () => {
               <div className="space-y-4 text-zinc-400 text-sm">
                 <div>
                   <p className="font-bold text-zinc-300">기업 강의</p>
-                  <p>현대모비스, 현대오토론, 현대자동차, LIG넥스원, LGU+, LG디스플레이, 한국전자정보통신산업진흥회, 태하메타트로닉스, 하나금융그룹, 미라콤, 삼성전자, 한화시스템, 한화탈레스 ,HP, 국세청, 신세계아이앤씨, LG전자 등</p>
+                  <p>RedHat 고객사, HP 파트너사, Kisec, 인텔, LG전자 기술연구소,한국IBM GKN, 오픈이지, 오라클 파트너사등 클라우드기업교육, 한국전파진흥협회, Kitri 재직자 향상 교육, 금융연수원, 현대퓨처넷등 클라우드 양성 교육</p>
                 </div>
                 <div>
                   <p className="font-bold text-zinc-300">대학 강의</p>
-                  <p>세종사이버대, 동양미래대, 서울디지털대, 숭실대, 목포대, 충북대, 계명대, 대구대, 전주대, 전북대, 원광대, 조선대, 인하대 등, 리눅스 · 임베디드 · 클라우드 강의</p>
+                  <p>이화여대, 성결대, 경기대등 클라우드 강의</p>
                 </div>
                 <div>
                   <p className="font-bold text-zinc-300">강의 경력</p>
-                  <p>현대자동차, 삼성SNS, ㈜새롬기술, 한국수력원자력㈜ 등 다양한 프로젝트 실무 개발</p>
+                  <p>클라우드 엔지니어링,보안,가상화, AI, AWS, GCP, LF, RedHat 공인강사</p>
                 </div>
               </div>
             </div>
