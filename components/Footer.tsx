@@ -1,11 +1,8 @@
 
-import React, { useEffect } from 'react';
+import React from 'react';
+import { handlePhoneClick } from '../constants';
 
 export const Footer: React.FC = () => {
-  useEffect(() => {
-  
-  }, []);
-
   return (
     <footer className="bg-black text-zinc-500 py-6 border-t border-zinc-900 text-sm">
       <div className="container mx-auto px-4">
@@ -23,14 +20,14 @@ export const Footer: React.FC = () => {
                 <p className="font-bold text-zinc-400 mb-2">고객센터</p>
                 <a 
                   href="tel:15336176" 
-                  className="text-2xl font-bold text-white hover:text-red-600 transition-colors md:pointer-events-none md:cursor-default md:hover:text-white inline-block mb-4"
+                  onClick={handlePhoneClick}
+                  className="text-2xl font-bold text-white hover:text-red-600 transition-colors inline-block mb-4 cursor-pointer"
+                  title="PC: 온라인 상담신청 이동 / 모바일: 전화 연결"
                 >
                   1533-6176
                 </a>
             </div>
         </div>
-
-        
       </div>
     </footer>
   );

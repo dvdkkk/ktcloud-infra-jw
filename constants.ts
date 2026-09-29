@@ -60,3 +60,14 @@ export const TARGET_AUDIENCE = [
   "인프라 자동화(IaC) 역량을 쌓고 싶은 개발자",
   "하이브리드/멀티 클라우드 환경에 관심 있는 IT 전문가"
 ];
+
+export const CONSULTATION_URL = 'https://naver.me/x2Y4d0IL';
+
+export const handlePhoneClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  if (typeof window === 'undefined') return;
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768;
+  if (!isMobile) {
+    e.preventDefault();
+    window.open(CONSULTATION_URL, '_blank', 'noopener,noreferrer');
+  }
+};
